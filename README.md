@@ -1,40 +1,38 @@
 # DigitalEdu_analysis
-Математическая модель, которая будет предсказывать покупку курса пользователем портала DigitalEdu. Задание выполнено на языке python с помощью библиотек pandas, sklearn
+A mathematical model that will predict the purchase of a course by a user of the DigitalEdu portal. The task was completed in python using the pandas, sklearn libraries
 
 
-DigitalEdu предоставляет данные со своего сайта о зарегистрированных пользователях, которым рассылалась реклама и которые купили или не купили курс. На основе этих данных нужно построить и обучить модель
+DigitalEdu provides data from its website about registered users who have been served ads and who have or have not purchased a course. Based on this data, you need to build and train a model
 
-Данные DigitalEdu_data.csv
-id — уникальный идентификатор пользователя.
-sex — пол (0 = не указан, 1 = женский, 2 = мужской).
-bdate — дата рождения.
-has_photo — установлено ли фото профиля (0 = не установлено, 1 = установлено).
-has_mobile — известен ли номер телефона (0 = не известен, 1 = известен).
-city — город.
-followers_count — количество подписчиков.
-graduation — год окончания обучения.
-education_form — форма обучения.
-relation — семейное положение (1 — не женат/не замужем; 
-2 — есть друг/есть подруга; 3 — помолвлен/помолвлена; 
-4 — женат/замужем; 5 — всё сложно;
-6 — в активном поиске; 7 — влюблён/влюблена; 
-8 — в гражданском браке; 0 — не указано).
-education_status — статус обучения.
-langs — список языков, которыми владеет пользователь.
-last_seen — время последнего посещения.
-occupation_type — текущее занятие пользователя (школа, университет, работа).
-occupation_name — название организации.
-life_main — главное в жизни. (1 — семья и дети; 2 — карьера и деньги;
- 3 — развлечения и отдых; 4 — наука и исследования;
- 5 — совершенствование мира; 6 — саморазвитие;
- 7 — красота и искусство; 8 — слава и влияние).
-people_main — главное в людях. (1 — ум и креативность; 
- 2 — доброта и честность; 3 — красота и здоровье; 
- 4 — власть и богатство; 5 — смелость и упорство;
- 6 — юмор и жизнелюбие).
-career_start — год начала работы.
-career_end — год окончания работы.
-result — приобрёл ли пользователь курс по программированию
-(0 — нет, 1 — да).
-'''
-
+Data DigitalEdu_data.csv
+id - the unique identifier of the user.
+sex - gender (0 = not specified, 1 = female, 2 = male).
+bdate - date of birth.
+has_photo - Whether a profile photo is set (0 = not set, 1 = set).
+has_mobile - whether the phone number is known (0 = not known, 1 = known).
+city - city.
+followers_count - number of followers.
+graduation — graduation year.
+education_form - the form of education.
+relation - marital status (1 - not married / not married;
+2 - have a friend / have a girlfriend; 3 - engaged / engaged;
+4 - married / married; 5 - everything is difficult;
+6 — in active search; 7 - in love / in love;
+8 - in a civil marriage; 0 - not specified).
+education_status - education status.
+langs - a list of languages that the user speaks.
+last_seen - the time of the last visit.
+occupation_type - user's current occupation (school, university, work).
+occupation_name - the name of the organization.
+life_main - the main thing in life. (1 - family and children; 2 - career and money;
+  3 - entertainment and recreation; 4 - science and research;
+  5 - improvement of the world; 6 - self-development;
+  7 - beauty and art; 8 - fame and influence).
+people_main - the main thing in people. (1 - mind and creativity;
+  2 - kindness and honesty; 3 - beauty and health;
+  4 - power and wealth; 5 - courage and perseverance;
+  6 - humor and love of life).
+career_start - the year the job started.
+career_end - the year the job ended.
+result - whether the user has purchased a programming course
+(0 - no, 1 - yes).
